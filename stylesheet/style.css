@@ -1,0 +1,265 @@
+#landingPage {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  /* Header */
+  /* Section */
+  /*Footer */
+  /* Buttons */
+}
+#landingPage #heroContainer {
+  height: 100vmin;
+  background-image: linear-gradient(57deg, #414e9f, #bc0b16);
+  background-size: cover;
+}
+#landingPage #heroContainer .hero-content {
+  color: #fff;
+  padding: 5vmin 10vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #heroContainer .hero-content {
+    padding: 5vmin;
+  }
+}
+#landingPage #heroContainer .hero-content nav a {
+  vertical-align: top;
+}
+#landingPage #heroContainer .hero-content nav a.logo {
+  text-transform: uppercase;
+  font-size: 4.5vmin;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #heroContainer .hero-content nav a.logo img {
+    padding-right: 0.5vmin;
+    width: 10%;
+  }
+}
+#landingPage #heroContainer .hero-content nav a.sign-in, #landingPage #heroContainer .hero-content nav a.sign-up {
+  width: 12vmin;
+  text-align: center;
+  float: right;
+  padding: 1.5vmin;
+  margin-left: 2vmin;
+  background: #fff;
+  -webkit-border-radius: 10vmin;
+  -moz-border-radius: 10vmin;
+  border-radius: 10vmin;
+  color: red;
+  border: 2px solid #fff;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #heroContainer .hero-content nav a.sign-in, #landingPage #heroContainer .hero-content nav a.sign-up {
+    width: 20vmin;
+    font-size: 3.5vmin;
+    padding: 1vmin;
+  }
+}
+#landingPage #heroContainer .hero-content nav a.sign-in {
+  background: rgba(255, 255, 255, 0.6);
+}
+#landingPage #heroContainer .hero-content nav span.beta-tag {
+  display: inline-block;
+  width: 7vmin;
+  padding: 0.35vmin;
+  font-size: 1.5vmin;
+  font-weight: 300;
+  background: #fff;
+  color: #212121;
+  text-align: center;
+  -webkit-border-radius: 10vmin;
+  -moz-border-radius: 10vmin;
+  border-radius: 10vmin;
+  vertical-align: top;
+  margin-top: 2vmin;
+  margin-left: 1vmin;
+}
+#landingPage #heroContainer .hero-content #ctaContent {
+  margin-top: 15%;
+}
+#landingPage #heroContainer .hero-content #ctaContent h1 {
+  margin: 0 0 3vmin 0;
+  font-size: 6vmin;
+}
+#landingPage #heroContainer .hero-content #ctaContent p {
+  font-size: 3.25vmin;
+  line-height: 5vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #heroContainer .hero-content #ctaContent p {
+    font-size: 4vmin;
+  }
+}
+#landingPage .product-desc {
+  text-align: center;
+}
+#landingPage .product-desc #sectionTitle {
+  margin: 0;
+  font-size: 10vmin;
+  margin-bottom: 5vmin;
+}
+#landingPage .product-desc p {
+  font-size: 3vmin;
+  line-height: 4.5vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage .product-desc p {
+    font-size: 4vmin;
+    line-height: 6vmin;
+    text-align: center;
+  }
+}
+#landingPage .section-container.last-of {
+  margin-bottom: 10vmin;
+}
+#landingPage .section-container {
+  padding: 5vmin 10vmin;
+}
+#landingPage .section-container .section-content div {
+  display: inline-block;
+  margin: 2vmin;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  #landingPage .section-container .section-content div {
+    width: 100%;
+  }
+}
+#landingPage .section-container .section-content h2 {
+  font-size: 6vmin;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  #landingPage .section-container .section-content h2 {
+    text-align: center;
+  }
+}
+#landingPage .section-container .section-content p {
+  font-size: 3vmin;
+  line-height: 4.5vmin;
+  color: 464646;
+  margin-bottom: 2.5vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage .section-container .section-content p {
+    font-size: 4vmin;
+    line-height: 6vmin;
+  }
+}
+#landingPage .section-container .section-content .img-container {
+  text-align: center;
+  width: 35%;
+}
+#landingPage .section-container .section-content .img-container img {
+  width: 75%;
+}
+@media screen and (max-width: 600px) {
+  #landingPage .section-container .section-content .img-container {
+    width: 100%;
+  }
+}
+#landingPage #footer {
+  text-align: center;
+  background-image: linear-gradient(57deg, #414e9f, #bc0b16);
+  padding: 10vmin 10vmin 15vmin 10vmin;
+  color: #fff;
+}
+#landingPage #footer h2 {
+  font-size: 6vmin;
+  margin-bottom: 3vmin;
+}
+#landingPage #footer .footer-desc {
+  font-size: 4vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #footer .footer-desc {
+    font-size: 3.5vmin;
+    line-height: 5.5vmin;
+  }
+}
+#landingPage #footer a {
+  color: #fff;
+  text-decoration: none;
+}
+#landingPage #footer p {
+  font-size: 2vmin;
+}
+#landingPage #footer #betaForm {
+  margin-top: 5vmin;
+  padding-bottom: 10vmin;
+  border-bottom: 1px solid #fff;
+}
+#landingPage #footer #betaForm input {
+  display: inline-block;
+  width: 15%;
+  padding: 2vmin 0;
+  margin-right: 3vmin;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #footer #betaForm input {
+    width: 100%;
+    margin-bottom: 8vmin;
+  }
+}
+#landingPage #footer #betaForm input[type='submit'] {
+  width: 15vmin;
+  padding: 2vmin;
+  background: #fff;
+  color: #212121;
+  -webkit-border-radius: 10vmin;
+  -moz-border-radius: 10vmin;
+  border-radius: 10vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #footer #betaForm input[type='submit'] {
+    margin-top: 5vmin;
+    margin-bottom: 0;
+    width: 25vmin;
+  }
+}
+#landingPage #footer #betaForm input::-webkit-input-placeholder {
+  color: #fff;
+}
+#landingPage #footer #betaForm input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+#landingPage #footer #betaForm input:-ms-input-placeholder {
+  color: #fff;
+}
+#landingPage #footer .soical-links {
+  margin-top: 10vmin;
+  margin-bottom: 4vmin;
+}
+#landingPage #footer .soical-links p {
+  font-size: 2vmin;
+  margin-bottom: 5vmin;
+  font-weight: 400;
+}
+#landingPage #footer .soical-links i {
+  margin-right: 1.5vmin;
+}
+#landingPage .request-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 2vmin;
+  color: #212121;
+  display: inline-block;
+  width: 40vmin;
+  -webkit-border-radius: 10vmin;
+  -moz-border-radius: 10vmin;
+  border-radius: 10vmin;
+  text-align: center;
+  font-size: 4vmin;
+  margin-top: 10vmin;
+}
+#landingPage .request-btn:hover {
+  cursor: pointer;
+}
