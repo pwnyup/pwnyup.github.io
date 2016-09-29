@@ -1,1 +1,143 @@
-PwnyUp
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PwnyUp - Play League of Legends contest, earn points and win cash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/style.scss">
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="landingPage">
+      <section id="heroContainer">
+        <div class="hero-content">
+          <nav>
+            <a href="/" class="logo"><img src="../images/pwnyup-white-logo.svg"> PwnyUp <span class="beta-tag">Beta</span></a>
+            <a class="sign-up" href="#">Sign Up</a>
+            <a class="sign-in" href="#">Sign In</a>
+          </nav>
+          <div id="ctaContent">
+            <h1>Think You’re a Great Summoner? It’s Time to PwnyUp!</h1>
+            <p>Compete in skill based League of Legends contest, earn points and win cash.</p>
+            <a class="request-btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container">
+      <div class="product-desc">
+        <h1 id="sectionTitle">How it Works</h1>
+        <p>PwnyUp hosts contest, processes entry fees, verifies winners and pays out the same day. All you gotta do is play!</p>
+      </div>
+    </section>
+
+      <!-- Content Section -->
+      <section class="section-container">
+        <div class="section-content">
+          <div class="content-shifted">
+            <h2>Contest</h2>
+            <p>Each contest is 24 hours, organized by ranked tier and region. Say you're a silver tier-division 3 rank, you can only enter contest that rank and above. This keeps competition fair and fun.</p>
+            
+          </div>
+          <div class="img-container">
+            <img src="/../images/tournaments.svg">
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section class="section-container">
+        <div class="section-content">
+          <div class="img-container shift-me">
+            <img src="/images/cross-hair-logo.svg">
+          </div>
+          
+          <div class="content-shifted shift-me">
+            <h2>How to Win, Earning Points</h2>
+            <p>Your goal during this time is to play as many solo ranked matches as you can. For each match you’ll receive points for the stats you earn.</p>
+
+            <p>For example, if you have 3 kills and 2 deaths during a match you'll receive ## points. {{!-- Or if you get the first tower kill, you will get ## points. --}}</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section -->
+      <section class="section-container">
+        <div class="section-content">
+          <div class="content-shifted">
+            <h2>Verifying Points</h2>
+             <p>At the end of the contest all your match points will be added up and the top performing players will split the pot.</p>
+            <p>We get your stats from Riot - just like lolking.net, op.gg, and lolskill.net do. This means our point system and contest are accurate, fair and up to date!</p> 
+          </div>
+          <div class="img-container">
+            <img src="/images/verify-points.svg">
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section class="section-container last-of">
+          <div class="section-content">
+            <div class="img-container shift-me">
+              <img src="/images/payments.svg">
+            </div>
+            <div class="content-shifted shift-me"> 
+              <h2>Payments</h2>
+              <p>For now bitcoin is the only method of payment we accept. If you're new to bitcoin don't worry we'll help you setup up a bitcoin wallet.</p>
+              <p>Your bitcoin wallet is used to pay contest entry fees and receive contest winnings. You can cash-out at anytime with services to exchange bitcoin for your local currency. </p>
+            </div>
+        </div>
+      </section>
+
+    	<!-- <div class="stateCTA">
+        <a class="request-btn mobile-view" href="#">Request an Invite</a>
+      </div> -->
+      
+      <!-- Footer -->
+      <footer id="footer">
+        <h2>Sign Up</h2>
+        <p class="footer-desc">We're currently in a private beta. If you'd like to be invited, please sign up below!</p>
+        <form id="betaForm" action="https://formspree.io/zach@pwnyup.com" method="POST">
+            <input type="email" placeholder="Email" name="_replyto">
+            <input type="text" placeholder="Summoner Name" name="name">
+            <input type="text" placeholder="Region" name="region">
+            <input type="submit" value="Sign Up">
+        </form>
+        <!-- <div>
+          <p> Copyright &copy;2016 pwnyup.com &#903; All Rights Reserved &#903; Handcrafted in Chicago</p>
+          <p>League of Legends is a registered trademark of Riot Games. All information about League of Legends belongs to Riot Games. League of Legends and Riot Games are not affiliated with PwnyUp.</p>
+        </div> -->
+        <div class="soical-links">
+          <p> Copyright ©2016 PwnyUp &#903; All rights reserved &#903; Handcrafted in Chicago & Brooklyn</p>
+          <a href="#" target="_blank" ><i class="facebook"></i></a>
+          <a href="https://twitter.com/pwnyup" target="_blank" ><i class="twitter"></i></a>
+          <a href="#"><i class="insta"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+
+      function scrollMe(anchor) {
+        var a = anchor === 'request-btn' ? '#sectionTitle' : '.footer-desc';
+        $('html,body').animate({
+            scrollTop: $(a).offset().top
+        }, 1200);
+        return false;
+      }
+      $( document ).ready(function() {
+        $(document).on('click', 'a.request-btn, a.sign-up', function(e) { 
+          scrollMe($(e.target).attr('class'));
+        });
+      });
+    </script>
+  </body>
+</html>

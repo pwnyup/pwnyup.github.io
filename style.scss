@@ -1,0 +1,327 @@
+$mobile: new-breakpoint(max-width 600px 12);
+$containerPadding: 5vmin;
+$black: #212121;
+$grey: 464646;
+
+@mixin borderRadius {
+  -webkit-border-radius: 10vmin;
+  -moz-border-radius: 10vmin;
+  border-radius: 10vmin;
+}
+
+#landingPage {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+  /* Header */
+  #heroContainer{
+    height: 100vmin;
+    background-image: linear-gradient(57deg, #414e9f, #bc0b16);
+    // background: url('/images/adobe-stock.png') no-repeat center;
+    background-size: cover;
+
+    .hero-content {
+      @include outer-container;
+      color: #fff;
+      padding: $containerPadding;
+      nav {
+      	a {
+      		vertical-align: top;
+      		&.logo {
+		      	text-transform: uppercase;
+						font-size: 4.5vmin;
+						color: #fff;
+						font-weight: 700;
+						font-family: 'Oswald', sans-serif;
+						@include media($mobile) {
+							font-size: 5vmin;
+							img {
+								padding-right: 0.5vmin;
+								width: 10%;
+							}
+						}
+					}
+					&.sign-in, &.sign-up {
+						width: 12vmin;
+						text-align: center;
+						float: right;
+						padding: 1.5vmin;
+						margin-left: 2vmin;
+						background: #fff;
+						@include borderRadius;
+						color: red;
+						border: 2px solid #fff;
+						@include media($mobile) {
+							width: 20vmin;
+							font-size: 3.5vmin;
+							padding: 1vmin;
+						}
+					}
+					&.sign-in {
+						background: rgba(255, 255, 255, 0.6);
+					}
+	      }
+	      span.beta-tag {
+	      	display: inline-block;
+	      	width: 7vmin;
+	        padding: 0.35vmin;
+	        font-size: 1.5vmin;
+	        font-weight:300;
+	        background: #fff;
+	        color: $black;
+	        text-align: center;
+	        @include borderRadius;
+	        vertical-align: top;
+	        margin-top: 2vmin;
+	        margin-left: 1vmin;
+	        @include media($mobile) {
+	        	margin-top: 2vmin;
+	        	font-size: 2vmin;
+	        	padding: 0.25vmin;
+	        }
+	      }
+      }
+
+      #ctaContent {
+        @include span-columns(12);
+        margin-top: 15%;
+        h1 {
+          margin: 0 0 3vmin 0;
+          font-size: 6vmin;
+        }
+        p {
+          font-size: 3.25vmin;
+          line-height: 5vmin;
+          @include media($mobile) {
+          	font-size: 4vmin;
+          }
+        }
+        a.request-btn {
+        		margin-top: 5vmin;
+				 		@include media($mobile) {
+				 			@include span-columns(6);
+				 			@include shift(3);
+				 			margin-top: 10vmin;
+				 			font-size: 4vmin;
+				 	}
+				}
+      }
+    }
+  }
+
+  .product-desc {
+  	text-align: center;
+  	#sectionTitle {
+	  	margin: 0;
+	  	font-size: 10vmin;
+	  	margin-bottom: 5vmin;
+	  	@include media($mobile) {
+	  		margin-bottom: 5vmin;
+	  	}
+	  }
+	  p {
+			font-size: 3vmin;
+		  line-height: 4.5vmin; 
+		  @include media($mobile) {
+				font-size: 4vmin;
+		  	line-height: 6vmin;
+		  	text-align: center;
+			}
+		}
+  }
+
+  /* Section */
+  .section-container.last-of {
+    margin-bottom: 10vmin;
+  }
+  .section-container {
+    @include outer-container;
+    padding: $containerPadding;
+    margin-top: 10vmin;
+
+    @include media($mobile) {
+      margin-top: 0vmin;
+    }
+    .section-content {
+      @include span-columns(12);
+      h2 {
+        font-size: 6vmin;
+        color: $black;
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include media($mobile) {
+          text-align: center;
+        }
+      }
+
+      p {
+        font-size: 3vmin;
+        line-height: 4.5vmin;
+        color: $grey;
+        margin-bottom: 2.5vmin;
+        @include media($mobile) {
+  				font-size: 4vmin;
+        	line-height: 6vmin;
+  			}
+      }
+      .img-container {
+      	text-align: center;
+      	img {
+            width: 75%;
+          }
+        @include span-columns(6);
+        @include media($mobile) {
+          @include span-columns(12);
+        }
+        //Shitty work around for mobile
+        &.shift-me {
+          @include media($mobile) {
+            margin-top: 55%;
+          }
+        }
+      }
+      .content-shifted {
+        @include span-columns(6);
+        @include media($mobile) {
+          @include span-columns(12);
+          margin-bottom: 5vmin;
+        }
+        &.shift-me {
+          @include media($mobile) {
+            @include shift(-12);
+          }
+        }
+      }
+    }
+  }
+
+  /*Footer */
+  #footer {
+    text-align: center;
+    background-image: linear-gradient(57deg, #414e9f, #bc0b16);
+    padding: 10vmin 10vmin 15vmin 10vmin;
+    color: #fff;
+    h2 {
+      font-size: 6vmin;
+      margin-bottom: 3vmin;
+    }
+    .footer-desc{
+			font-size: 4vmin;
+			@include media($mobile) {
+				font-size: 3.5vmin;
+				line-height: 5.5vmin;
+    	}
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    p {
+      font-size: 2vmin;
+    }
+    #betaForm {
+    	margin-top: 5vmin;
+    	padding-bottom: 10vmin;
+			border-bottom: 1px solid #fff;
+
+			input {
+				background: transparent;
+				border: none;
+				border-bottom: 1px solid #fff;
+				color: #fff;
+				padding: 2vmin 0;
+				margin-right: 3vmin;
+				width: 32vmin;
+				@include media($mobile) {
+          width: 100%;
+          margin-bottom: 8vmin;
+        }
+				&[type='submit'] {
+					width: 15vmin;
+					padding: 2vmin;
+					background: #fff;
+					color: $black;
+					@include borderRadius;
+					@include media($mobile) {
+						margin-top: 5vmin;
+						margin-bottom: 0;
+          	width: 25vmin;
+        	}
+				}
+				&::-webkit-input-placeholder {
+				   color: #fff;
+				}
+
+				&:-moz-placeholder { /* Firefox 18- */
+				   color: #fff;  
+				}
+
+				&:-ms-input-placeholder {  
+				   color: #fff;  
+				}
+			}
+    }
+    .soical-links {
+    	margin-top: 10vmin;
+    	p {
+    		font-size: 2vmin;
+    		margin-bottom: 5vmin;
+    		font-weight: 400;
+    	}
+      margin-bottom: 4vmin;
+      i {
+        margin-right: 1.5vmin;
+      }
+      .email:before {
+        @include fontIcon($icon-email, 5.5vmin, #fff);
+        margin-right: 1.25vmin;
+      }
+      .facebook:before {
+        @include fontIcon($icon-facebook, 5.5vmin, #fff);
+        margin-right: 1.25vmin;
+      }
+      .twitter:before {
+        @include fontIcon($icon-twitter, 5.5vmin, #fff);
+        margin-right: 1.25vmin;
+      }
+      .insta:before {
+        @include fontIcon($icon-instagram, 5.5vmin, #fff);
+        margin-right: 1.25vmin;
+      }
+    }
+  }
+
+  // .stateCTA {
+  //   .request-btn {
+  //     // display: none;
+  //   }
+  //   @include media($mobile) {
+  //     .request-btn {
+  //     	background-image: linear-gradient(57deg, #414e9f, #bc0b16);
+  //     	border-radius: 0;
+  //     	color: #fff;
+  //       @include span-columns(12)
+  //       &.cta-change {
+  //         background: #fff;
+  //         color: #000;
+  //       }
+  //     }
+  //   }
+  // }
+
+  /* Buttons */
+  .request-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 2vmin;
+    color: $black;
+    @include borderRadius;
+    @include span-columns(3);
+    text-align: center;
+    font-size: 3vmin;
+    margin-top: 2vmin;
+
+    &:hover {
+    	cursor: pointer;
+    }
+  }
+}
