@@ -22,6 +22,7 @@
 }
 #landingPage #heroContainer .hero-content nav a {
   vertical-align: top;
+  text-decoration: none;
 }
 #landingPage #heroContainer .hero-content nav a.logo {
   text-transform: uppercase;
@@ -43,6 +44,7 @@
   padding: 1.5vmin;
   margin-left: 2vmin;
   background: #fff;
+  font-weight: 400;
   -webkit-border-radius: 10vmin;
   -moz-border-radius: 10vmin;
   border-radius: 10vmin;
@@ -110,9 +112,6 @@
     text-align: center;
   }
 }
-#landingPage .section-container.last-of {
-  margin-bottom: 10vmin;
-}
 #landingPage .section-container {
   padding: 5vmin 10vmin;
 }
@@ -160,12 +159,32 @@
   #landingPage .section-container .section-content .img-container {
     width: 100%;
   }
+  #landingPage .section-container .section-content .img-container.shift-me {
+    position: absolute;
+    left: 0;
+  }
+  #landingPage .section-container .section-content .img-container.cross-hair {
+    margin-top: 52vmin;
+  }
+  #landingPage .section-container .section-content .img-container.payments {
+    margin-top: 65vmin;
+  }
+}
+@media screen and (max-width: 600px) {
+  #landingPage .section-container .section-content .content-shifted {
+    margin-top: 70vmin;
+  }
 }
 #landingPage #footer {
   text-align: center;
   background-image: linear-gradient(57deg, #414e9f, #bc0b16);
   padding: 10vmin 10vmin 15vmin 10vmin;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #footer {
+    margin-top: 85vmin;
+  }
 }
 #landingPage #footer h2 {
   font-size: 6vmin;
@@ -213,6 +232,7 @@
   padding: 2vmin;
   background: #fff;
   color: #212121;
+  font-weight: 400;
   -webkit-border-radius: 10vmin;
   -moz-border-radius: 10vmin;
   border-radius: 10vmin;
@@ -252,12 +272,13 @@
   padding: 2vmin;
   color: #212121;
   display: inline-block;
-  width: 40vmin;
+  width: 30vmin;
+  font-weight: 400;
   -webkit-border-radius: 10vmin;
   -moz-border-radius: 10vmin;
   border-radius: 10vmin;
   text-align: center;
-  font-size: 4vmin;
+  font-size: 3vmin;
   margin-top: 10vmin;
 }
 #landingPage .request-btn:hover {
