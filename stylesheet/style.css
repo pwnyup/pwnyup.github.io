@@ -57,9 +57,7 @@
 }
 @media screen and (max-width: 600px) {
   #landingPage #heroContainer .hero-content nav a.sign-in, #landingPage #heroContainer .hero-content nav a.sign-up {
-    width: 20vmin;
-    font-size: 3.5vmin;
-    padding: 1vmin;
+    display: none;
   }
 }
 #landingPage #heroContainer .hero-content nav a.sign-in {
