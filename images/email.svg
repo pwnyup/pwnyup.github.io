@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="44px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>0117E94F-CB53-45BF-972A-2F0FCC59EC81</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="43.951435 43.951435 0 43.951435 0 0 43.951435 0"></polygon>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Landing_Page_Desktop" transform="translate(-910.000000, -3713.000000)">
+            <g id="Footer" transform="translate(0.000000, 3340.000000)">
+                <g id="Mail" transform="translate(910.456790, 373.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M21.975635,0 C9.784335,0 -0.000165,9.86205 -0.000165,21.9758 C-0.000165,34.1671 9.861885,43.9516 21.975635,43.9516 C34.089385,43.9516 43.951435,34.08955 43.951435,21.9758 C43.951435,9.7845 34.166935,0 21.975635,0 L21.975635,0 Z M34.865985,13.7445 L21.975635,23.4509 L9.007735,13.7445 L34.865985,13.7445 Z M9.007735,14.7543 L17.005835,20.88845 L9.007735,30.2071 L9.007735,14.7543 Z M10.016985,30.12955 L17.627335,21.3543 L21.975635,24.69335 L26.323935,21.3543 L33.778635,30.12955 L10.016985,30.12955 Z M34.943535,30.2071 L27.022985,20.88845 L34.943535,14.75375 L34.943535,30.2071 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

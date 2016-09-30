@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>C1D99330-610D-400F-99C5-DC6CA2CC8F20</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000165 43.95644 43.956165 43.95644 43.956165 0 0.000165 0"></polygon>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Landing_Page_Desktop_Beta_FooterDefault" transform="translate(-635.000000, -430.000000)">
+            <g id="Footer">
+                <g id="Group" transform="translate(635.000000, 430.000000)">
+                    <g id="Facebook">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M21.978165,0 C9.836365,0 0.000165,9.83675 0.000165,21.97855 C0.000165,34.1198 9.836365,43.95655 21.978165,43.95655 C34.119965,43.95655 43.956165,34.1198 43.956165,21.97855 C43.956165,9.83675 34.119965,0 21.978165,0 L21.978165,0 Z M28.509965,12.91015 L25.436565,12.91015 C24.360215,12.91015 24.129765,13.3716 24.129765,14.4474 L24.129765,17.1369 L28.509965,17.1369 L28.049065,21.97855 L24.052765,21.97855 L24.052765,36.19495 L18.366315,36.19495 L18.366315,22.055 L15.446365,22.055 L15.446365,17.2139 L18.366315,17.2139 L18.366315,13.44805 C18.366315,9.9132 20.287465,7.99205 24.514215,7.99205 L28.433515,7.99205 L28.509965,12.91015 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

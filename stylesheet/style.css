@@ -11,16 +11,6 @@
   background: url("/images/hero-image.png") no-repeat center;
   background-size: cover;
 }
-#landingPage #heroContainer:before {
-  content: '';
-  position: absolute;
-  height: 100vmin;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-image: linear-gradient(57deg, #414e9f, #bc0b16);
-  opacity: .7;
-}
 #landingPage #heroContainer .hero-content {
   color: #fff;
   padding: 5vmin 10vmin;
@@ -55,6 +45,7 @@
   width: 12vmin;
   text-align: center;
   float: right;
+  color: red;
   padding: 1.5vmin;
   margin-left: 2vmin;
   background: #fff;
@@ -87,8 +78,13 @@
   -moz-border-radius: 10vmin;
   border-radius: 10vmin;
   vertical-align: top;
-  margin-top: 3vmin;
+  margin-top: 2vmin;
   margin-left: 1vmin;
+}
+@media screen and (max-width: 600px) {
+  #landingPage #heroContainer .hero-content nav span.beta-tag {
+    margin-top: 3vmin;
+  }
 }
 #landingPage #heroContainer .hero-content #ctaContent {
   margin-top: 15%;
@@ -98,7 +94,7 @@
   font-size: 6vmin;
 }
 #landingPage #heroContainer .hero-content #ctaContent p {
-  font-size: 3.25vmin;
+  font-size: 3.5vmin;
   line-height: 5vmin;
 }
 @media screen and (max-width: 600px) {
@@ -279,6 +275,22 @@
 }
 #landingPage #footer .soical-links i {
   margin-right: 1.5vmin;
+}
+#landingPage #footer .soical-links .email:before {
+  background: url("/images/email.svg") no-repeat center;
+  width: 2vmin;
+  height: 2vmin;
+  margin-right: 1.25vmin;
+}
+#landingPage #footer .soical-links .facebook:before {
+  width: 2vmin;
+  height: 2vmin;
+  background: url("/images/facebook.svg") no-repeat center;
+  margin-right: 1.25vmin;
+}
+#landingPage #footer .soical-links .twitter:before {
+  background: url("/images/twitter.svg") no-repeat center;
+  margin-right: 1.25vmin;
 }
 #landingPage .request-btn {
   background-color: #ffffff;
