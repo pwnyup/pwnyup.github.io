@@ -273,24 +273,8 @@
   margin-bottom: 5vmin;
   font-weight: 400;
 }
-#landingPage #footer .soical-links i {
-  margin-right: 1.5vmin;
-}
-#landingPage #footer .soical-links .email:before {
-  background: url("/images/email.svg") no-repeat center;
-  width: 2vmin;
-  height: 2vmin;
-  margin-right: 1.25vmin;
-}
-#landingPage #footer .soical-links .facebook:before {
-  width: 2vmin;
-  height: 2vmin;
-  background: url("/images/facebook.svg") no-repeat center;
-  margin-right: 1.25vmin;
-}
-#landingPage #footer .soical-links .twitter:before {
-  background: url("/images/twitter.svg") no-repeat center;
-  margin-right: 1.25vmin;
+#landingPage #footer .soical-links img {
+  margin-right: 2.5vmin;
 }
 #landingPage .request-btn {
   background-color: #ffffff;
