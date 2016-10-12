@@ -271,6 +271,10 @@
   margin-bottom: 5vmin;
   font-weight: 400;
 }
+#landingPage #footer .soical-links p.lol-disclaimer {
+  margin-top: 2vmin;
+  font-size: 1.25vmin;
+}
 #landingPage #footer .soical-links img {
   margin-right: 2.5vmin;
 }
